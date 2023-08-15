@@ -1,10 +1,10 @@
 <script lang="ts">
-    import { Drawer, drawerStore } from '@skeletonlabs/skeleton';
+    import { drawerStore } from '@skeletonlabs/skeleton';
     import type { DrawerSettings } from '@skeletonlabs/skeleton';
     import LeftArrow from '$lib/icons/leftArrow.svelte';
 
     const drawerSettings: DrawerSettings = {
-            id: 'example-22',
+            id: 'assigments',
             width: 'w-[280px] md:w-[480px]',
             padding: 'p-4',
             rounded: 'rounded-xl',

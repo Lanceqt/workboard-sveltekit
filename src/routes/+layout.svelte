@@ -15,7 +15,7 @@
 	<svelte:fragment slot="header">
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<h1 class="h1"><span class="gradient-heading">Title</span></h1>
+				<h1 class="h1"><span class="gradient-heading">Rikovas totalt seje arbejdstavle</span></h1>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<OpenMenu />

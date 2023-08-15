@@ -1,15 +1,6 @@
 <script lang="ts">
     import { Drawer, drawerStore } from '@skeletonlabs/skeleton';
-	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 	import { InputChip } from '@skeletonlabs/skeleton';
-
-
-	const drawerSettings: DrawerSettings = {
-		id: 'assigments',
-		width: 'w-[280px] md:w-[480px]',
-		padding: 'p-4',
-		rounded: 'rounded-xl',
-	};
 
 	let list: string[] = ['Kasper', 'Camilla', 'karsten', 'Tobias'];
 </script>
@@ -33,6 +24,7 @@
 		<!-- (show 'example-2' contents) -->
 		2
 	{:else}
+	<pre class="pre">id: {$drawerStore.id}</pre>
 		<form class="m-4" method="POST" action="/login">
 			<label class="username m-4">
 				<input class="input" title="Input (text)" type="text" placeholder="Brugernavn" />
