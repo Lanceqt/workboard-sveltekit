@@ -1,19 +1,34 @@
 <script lang="ts">
     import { Drawer, drawerStore } from '@skeletonlabs/skeleton';
 	import type { DrawerSettings } from '@skeletonlabs/skeleton';
+	import { InputChip } from '@skeletonlabs/skeleton';
+
 
 	const drawerSettings: DrawerSettings = {
-		id: 'example-22',
+		id: 'assigments',
 		width: 'w-[280px] md:w-[480px]',
 		padding: 'p-4',
 		rounded: 'rounded-xl',
 	};
+
+	let list: string[] = ['Kasper', 'Camilla', 'karsten', 'Tobias'];
 </script>
 
 <Drawer position="right">
-	{#if $drawerStore.id === 'example-1'}
-		<!-- (show 'example-1' contents) -->
-		1
+	{#if $drawerStore.id === 'assigments'}
+		<button type="button" class="btn btn-l variant-filled">Opret opgave</button>
+
+		<h2>Opgave 1</h2>
+		<InputChip bind:value={list} name="chips" placeholder="Enter any value..." />
+
+		<h2>Opgave 2</h2>
+		<InputChip bind:value={list} name="chips" placeholder="Enter any value..." />
+
+		<h2>Opgave 3</h2>
+		<InputChip bind:value={list} name="chips" placeholder="Enter any value..." />
+
+		<h2>Opgave 4</h2>
+		<InputChip bind:value={list} name="chips" placeholder="Enter any value..." />
 	{:else if $drawerStore.id === 'example-2'}
 		<!-- (show 'example-2' contents) -->
 		2
