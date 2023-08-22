@@ -7,6 +7,7 @@
 
 <Drawer position="right">
 	{#if $drawerStore.id === 'assigments'}
+	<pre class="pre">id: {$drawerStore.id}</pre>
 		<button type="button" class="btn btn-l variant-filled">Opret opgave</button>
 
 		<h2>Opgave 1</h2>
@@ -22,7 +23,7 @@
 		<InputChip bind:value={list} name="chips" placeholder="Enter any value..." />
 	{:else if $drawerStore.id === 'example-2'}
 		<!-- (show 'example-2' contents) -->
-		2
+		<pre class="pre">id: {$drawerStore.id}</pre>
 	{:else}
 	<pre class="pre">id: {$drawerStore.id}</pre>
 		<form class="m-4" method="POST" action="/login">

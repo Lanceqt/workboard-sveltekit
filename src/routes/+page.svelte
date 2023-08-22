@@ -1,5 +1,6 @@
 <script lang="ts">
 </script>
+<a href="workboard">Workboard</a>
 <!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
 <!-- <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-5">
